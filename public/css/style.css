@@ -1,0 +1,74 @@
+/* Centrer le <h1> et changer la police */
+h1 {
+  font-family: 'Roboto', sans-serif; /* Change la police */
+  text-align: center; /* Aligne horizontalement */
+  margin-top: 10%; /* Ajuste la marge pour centrer verticalement (optionnel si nécessaire) */
+}
+
+/* Image dans les cartes */
+.card-img-top {
+  object-fit: cover; /* S'adapte au conteneur */
+  height: 200px; /* Hauteur fixe pour les images */
+  width: 100%; /* S'adapte à la largeur de la carte */
+  border-bottom: 1px solid #dee2e6; /* Ligne entre image et contenu */
+}
+
+/* Titre et texte des cartes */
+.card-title {
+  font-size: 1.25rem; /* Taille du titre */
+  font-weight: bold; /* Mettre en valeur */
+  margin-bottom: 0.5rem; /* Espacement avec le texte */
+}
+
+.card-text {
+  font-size: 0.9rem; /* Texte plus petit */
+  color: #6c757d; /* Couleur grise */
+}
+
+/* Boutons dans les cartes */
+.btn-primary {
+  background-color: #007bff; /* Couleur primaire */
+  border: none; /* Retirer les bordures */
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Couleur plus foncée au survol */
+}
+
+/* Section des articles */
+#latest-news {
+  margin-top: 2rem; /* Espacement au-dessus */
+}
+
+#latest-news h2 {
+  color: #343a40; /* Couleur pour le titre de la section */
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Grille des cartes */
+#news-container {
+  display: flex;
+  flex-wrap: wrap; /* Les cartes s'adaptent à l'écran */
+  gap: 1rem; /* Espacement entre les cartes */
+}
+
+#news-container .col-md-4 {
+  flex: 1 1 calc(33.333% - 1rem); /* Largeur d'une carte sur trois */
+  max-width: calc(33.333% - 1rem); /* Même taille max */
+}
+
+@media (max-width: 768px) {
+  #news-container .col-md-4 {
+    flex: 1 1 calc(50% - 1rem); /* Deux cartes par ligne sur petit écran */
+    max-width: calc(50% - 1rem);
+  }
+}
+
+@media (max-width: 576px) {
+  #news-container .col-md-4 {
+    flex: 1 1 100%; /* Une carte par ligne sur mobile */
+    max-width: 100%;
+  }
+}
