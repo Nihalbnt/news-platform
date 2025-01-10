@@ -1,8 +1,11 @@
-/* Centrer le <h1> et changer la police */
 h1 {
-  font-family: 'Roboto', sans-serif; /* Change la police */
+  font-family: 'Roboto', sans-serif; 
   text-align: center; /* Aligne horizontalement */
-  margin-top: 10%; /* Ajuste la marge pour centrer verticalement (optionnel si nécessaire) */
+  margin-top: 10%; /* Ajuste la marge pour centrer verticalement */
+}
+p {
+  font-family: 'Roboto', sans-serif; 
+  text-align: center; 
 }
 
 /* Image dans les cartes */
